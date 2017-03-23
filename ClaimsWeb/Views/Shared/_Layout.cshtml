@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    @ViewBag.Title - Claims</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    @*<link href="@Url.Content("~/Content/style.css")" rel="stylesheet" type="text/css" />*@
+    @*<link href="@Url.Content("~/Content/owl.carousel.css")" rel="stylesheet" type="text/css" />*@
+    @*<link href="@Url.Content("~/Content/chocolat.css")" rel="stylesheet" type="text/css" />*@
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/layout.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/framework.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/college-font.css")" rel="stylesheet" type="text/css" />
+    @*<link href="@Url.Content("~/Content/fontawesome-4.4.0.min.css")" rel="stylesheet" type="text/css" />*@
+    <script src="@Url.Content("~/Scripts/jquery-1.6.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.backtotop.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.mobilemenu.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.placeholder.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/owl.carousel.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.chocolat.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/easing.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/responsiveslides.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.min.js")" type="text/javascript"></script>
+
+
+
+</head>
+
+<body id="top">
+
+    <div class="wrapper row0">
+        <div id="topbar" class="hoc clear">
+            <!-- ################################################################################################ -->
+            <div class="fl_left">
+                <ul class="nospace inline pushright">
+                    <li><i class="fa fa-user"></i> @Html.ActionLink("Login", "index", "Login")</li>
+                    @*<li><i class="fa fa-user"></i> @Html.ActionLink("Faculty", "Faculty", "Login")</li>
+                    <li><i class="fa fa-user"></i> @Html.ActionLink("Manager", "Manager", "Login")</li>
+                    <li><i class="fa fa-user"></i> @Html.ActionLink("Cordinator", "Cordinator", "Login")</li>*@
+                    
+                </ul>
+            </div>
+            @*<div class="fl_right">
+                <ul class="faico clear">
+                    <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div>*@
+            <!-- ################################################################################################ -->
+        </div>
+    </div>
+    
+    <div class="wrapper row1">
+        <header id="header" class="hoc clear">
+            <!-- ################################################################################################ -->
+            <div id="logo" class="fl_left">
+                <h1><a href="index.html">University of Greenwich</a></h1>
+            </div>
+            <nav id="mainav" class="fl_right">
+                <ul class="clear">
+                    <li class="active">@Html.ActionLink("Home", "index", "Home")</li>
+                    <li>
+                        <a class="drop" href="#">Pages</a>
+                        <ul>
+                            <li><a href="pages/gallery.html">Gallery</a></li>
+                            <li><a href="pages/full-width.html">Full Width</a></li>
+                            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+                            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+                            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="drop" href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="#">Level 2</a></li>
+                            <li>
+                                <a class="drop" href="#">Level 2 + Drop</a>
+                                <ul>
+                                    <li><a href="#">Level 3</a></li>
+                                    <li><a href="#">Level 3</a></li>
+                                    <li><a href="#">Level 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Level 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Link Text</a></li>
+                    <li><a href="#">Link Text</a></li>
+                </ul>
+            </nav>
+            <!-- ################################################################################################ -->
+        </header>
+    </div>
+   
+    <div class="wrapper bgded overlay" style="background-image:url('Images/bg6.jpg')">
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider">
+                <li>
+
+                    <div class="slider-info">
+                        <p>wisdom begins with wonder.</p>
+                        <h3><a href="index.html"><span>Edu</span> cational</a></h3>
+                        <h6>wisdom begins with wonder.</h6>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="slider-info">
+                        <p>Education is a vaccine for violence.</p>
+                        <h3><a href="index.html"><span>Edu</span> cational</a></h3>
+                        <h6>wisdom begins with wonder.</h6>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="slider-info">
+                        <p>wisdom begins with wonder.</p>
+                        <h3><a href="index.html"><span>Edu</span> cational</a></h3>
+                        <h6>wisdom begins with wonder.</h6>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="slider-info">
+                        <p>Learning never exhausts the mind.</p>
+                        <h3><a href="index.html"><span>Edu</span> cational</a></h3>
+                        <h6>wisdom begins with wonder.</h6>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="wrapper row3">
+        <div id="introblocks" class="hoc clear">
+           
+            <ul class="nospace clear">
+                <li>
+                    <article>
+                        <a href="#"><i class="clg clg-planet-earth5"></i></a>
+                        <h4 class="heading underline center"><a href="#">Ultrices quam</a></h4>
+                        <p>Justo hendrerit suspendisse non justo tempor porttitor urna ac fringilla orci&hellip;</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#"><i class="clg clg-monument26"></i></a>
+                        <h4 class="heading underline center"><a href="#">Convallis lacus</a></h4>
+                        <p>Interdum sit elementum at amet diam sed non convallis vitae nec habitant&hellip;</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#"><i class="clg clg-microscopes2"></i></a>
+                        <h4 class="heading underline center"><a href="#">Proin vulputate</a></h4>
+                        <p>Commodo quis maecenas in enim ac elit tempor vehicula pellentesque a libero&hellip;</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#"><i class="clg clg-university23"></i></a>
+                        <h4 class="heading underline center"><a href="#">Sed efficitur</a></h4>
+                        <p>Rhoncus iaculis ligula vel lobortis nullam malesuada mi odio vitae consequat&hellip;</p>
+                    </article>
+                </li>
+            </ul>
+            
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <div class="wrapper row4">
+            <footer id="footer" class="hoc topspace-0 clear">
+                <!-- ################################################################################################ -->
+                <div id="newsletter" class="clear">
+                    <div class="one_quarter first">
+                        <h6 class="nospace topspace-5"><i class="fa fa-newspaper-o"></i> Latest News</h6>
+                    </div>
+                    <form class="three_quarter" method="post" action="#">
+                        <div class="clear">
+                            <input class="one_third first" type="text" value="" placeholder="Name" required>
+                            <input class="one_third" type="email" value="" placeholder="Email" required>
+                            <button class="one_third" type="submit" title="Sign Up">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- ################################################################################################ -->
+                <div class="group">
+                    <div class="one_half first">
+                        <h6 class="title">Ultrices vestibulum quam</h6>
+                        <p class="btmspace-30">Libero congue maximus orci eu convallis orci fusce nunc lacus dignissim ac gravida id ultricies id mi nulla eget vulputate sem id placerat velit aliquam arcu justo tristique sed neque vitae aliquet mattis libero proin consequat metus sit amet.</p>
+                        <ul class="nospace inline pushright">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Copyright</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="one_quarter">
+                        <h6 class="title">Augue molestie</h6>
+                        <article>
+                            <h2 class="nospace font-x1"><a href="#">Velit est at quam</a></h2>
+                            <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos integer volutpat.</p>
+                        </article>
+                    </div>
+                    <div class="one_quarter">
+                        <h6 class="title">erat eu dapibus</h6>
+                        <ul class="nospace linklist">
+                            <li><a href="#">Scelerisque tortor ac mollis</a></li>
+                            <li><a href="#">Lectus nisl semper sit amet</a></li>
+                            <li><a href="#">Quis dictum vestibulum arcu</a></li>
+                            <li><a href="#">Curabitur dignissim nulla</a></li>
+                            <li><a href="#">Pulvinar integer dapibus</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ################################################################################################ -->
+            </footer>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
